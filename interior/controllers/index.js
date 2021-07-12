@@ -22,7 +22,6 @@ class Controller {
       KategoriId: Number(req.body.kategoriId),
       status: req.body.status
     }
-    console.log(data)
     Toko.create(data)
       .then(() => res.status(200).json({message: "Success Create"}))
       .catch(err => {

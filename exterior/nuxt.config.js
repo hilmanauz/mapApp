@@ -46,7 +46,8 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:8800/',
+    // baseURL: 'http://localhost:8800/',
+    baseURL: 'http://monitoring-map-app.herokuapp.com/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
