@@ -29,7 +29,10 @@
       </div>
       <div>
         <v-list>
-          <v-list-item-group>
+          <v-list-item-group
+          v-model="selectedToko"
+          :mandatory="selectedToko ? true : false"
+          >
             <CardToko 
             v-for="(item, index) in allToko"
             :key="index"
@@ -47,6 +50,7 @@ import {mdiPlus, mdiChevronRight, mdiChevronLeft} from '@mdi/js'
 export default {
   data() {
     return {
+      selectedToko: null,
       isDrawer: true,
       titleKategori: 'Kategori',
       titleMotor: 'Motoris',
