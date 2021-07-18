@@ -21,6 +21,7 @@
             :label="element.nama"
             :value="element.id"
             hide-details
+            @change="selectedFilter"
           ></v-checkbox>
         </v-list-item>
       </v-list-item-group>
@@ -47,6 +48,16 @@ export default {
       default: '',
     },
   },
+  methods: {
+    selectedFilter(item) {
+      if(this.title === "Kategori") {
+        this.$store.commit('SET_FILTER_KATEGORI', this.selected)
+      } else {
+        this.$store.commit('SET_FILTER_MOTOR', this.selected)
+      }
+      this.$store.dispatch('filterToko', {page : 1})
+    }
+  }
 }
 </script>
 

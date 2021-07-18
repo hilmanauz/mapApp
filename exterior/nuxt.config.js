@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - exterior',
-    title: 'exterior',
+    titleTemplate: '%s',
+    title: 'Map Mantap',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -46,8 +46,8 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // baseURL: 'http://localhost:8800/',
-    baseURL: 'https://monitoring-map-app.herokuapp.com/',
+    baseURL: 'http://localhost:8800/',
+    // baseURL: 'https://monitoring-map-app.herokuapp.com/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
