@@ -5739,6 +5739,20 @@ const tokos = [
  }
 ]
 
+const toko = [
+  {
+    nama: "Diva - Ciroyom",
+    telp: 0,
+    long: 107.580004,
+    lat: -6.9088085,
+    mapUrl: "https://www.google.com/maps?q=-6.9088085,107.580004",
+    status: 0,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    KategoriId: 1,
+    MotorId: 1,
+ }
+]
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
