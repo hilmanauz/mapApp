@@ -5765,7 +5765,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-     await queryInterface.bulkInsert('Tokos', tokos, {})
+     await queryInterface.bulkInsert('Tokos', toko, {})
   },
 
   down: async (queryInterface, Sequelize) => {
